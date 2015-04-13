@@ -1,0 +1,75 @@
+{
+  "title": "RB-IGA for Real Time Simulations of Rigid Catamaran Sails",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "Abstract Problem Formulation",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "Parametric Optimization",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "Given: State parameters/scenario",
+              "id": 4
+            },
+            "2": {
+              "title": "Find: Controls ",
+              "id": 5
+            },
+            "3": {
+              "title": "Minimizing: J(u(Controls), State)",
+              "id": 7
+            },
+            "4": {
+              "title": "Subject to: E(u(Controls), State) = 0",
+              "id": 8,
+              "ideas": {}
+            }
+          }
+        }
+      }
+    },
+    "11": {
+      "title": "Examples",
+      "id": 10,
+      "ideas": {
+        "1": {
+          "title": "Sails",
+          "id": 11
+        },
+        "2": {
+          "title": "Optimal Swimming",
+          "id": 14,
+          "attr": {
+            "style": {}
+          }
+        },
+        "3": {
+          "title": "Boat Hulls",
+          "id": 13
+        },
+        "14": {
+          "title": "Aortic Valves and Transplants",
+          "id": 12,
+          "attr": {
+            "style": {}
+          }
+        }
+      }
+    },
+    "21": {
+      "title": "Main Issues",
+      "id": 15,
+      "ideas": {
+        "1": {
+          "title": "Computationa Cost of E(u(Controls), State) = 0",
+          "id": 16
+        }
+      }
+    }
+  },
+  "links": []
+}
