@@ -3,61 +3,123 @@
   "id": 1,
   "formatVersion": 2,
   "ideas": {
-    "1": {
-      "title": "Abstract Problem Formulation",
-      "id": 2,
-      "ideas": {
-        "1": {
-          "title": "Parametric Optimization",
-          "id": 3,
-          "ideas": {
-            "1": {
-              "title": "Given: State parameters/scenario",
-              "id": 4
-            },
-            "2": {
-              "title": "Find: Controls ",
-              "id": 5
-            },
-            "3": {
-              "title": "Minimizing: J(u(Controls), State)",
-              "id": 7
-            },
-            "4": {
-              "title": "Subject to: E(u(Controls), State) = 0",
-              "id": 8,
-              "ideas": {}
-            }
-          }
-        }
-      }
-    },
     "11": {
       "title": "Examples",
       "id": 10,
       "ideas": {
-        "1": {
-          "title": "Sails",
-          "id": 11
-        },
         "2": {
           "title": "Optimal Swimming",
           "id": 14,
           "attr": {
-            "style": {}
+            "style": {},
+            "storyboard-scenes": [
+              {
+                "storyboards": {
+                  "Storyboard 1": 3.5
+                },
+                "type": "with-children"
+              }
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "s: final position/rotation after one stroke",
+              "id": 27
+            },
+            "2": {
+              "title": "E: Stokes Equations",
+              "id": 29
+            },
+            "0.5": {
+              "title": "J: energy dissipation",
+              "id": 28,
+              "attr": {
+                "style": {}
+              }
+            },
+            "1.5": {
+              "title": "c: shape change history",
+              "id": 32
+            }
           }
         },
         "3": {
-          "title": "Boat Hulls",
-          "id": 13
-        },
-        "14": {
-          "title": "Aortic Valves and Transplants",
-          "id": 12,
+          "title": "Ship Hulls",
+          "id": 13,
+          "ideas": {
+            "1": {
+              "title": "J: Boat Resistence",
+              "id": 30
+            },
+            "2": {
+              "title": "s: incident current/waves - distribution of weigths on boat",
+              "id": 31
+            },
+            "3": {
+              "title": "c: hull shape/bulb shape/steering manovers",
+              "id": 33
+            },
+            "4": {
+              "title": "E: Potential Flow + Free Surface",
+              "id": 34
+            }
+          },
           "attr": {
+            "storyboard-scenes": [
+              {
+                "storyboards": {
+                  "Storyboard 1": 3.75
+                },
+                "type": "with-children"
+              }
+            ],
             "style": {}
           }
+        },
+        "8.5": {
+          "title": "Sails",
+          "id": 11,
+          "attr": {
+            "style": {},
+            "storyboard-scenes": [
+              {
+                "storyboards": {
+                  "Storyboard 1": 3.875
+                },
+                "type": "with-children"
+              }
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "J: total lifting  force ",
+              "id": 35
+            },
+            "2": {
+              "title": "s:incident wind/target trajectiory",
+              "id": 36
+            },
+            "3": {
+              "title": "c: sail trimming ",
+              "id": 37
+            },
+            "4": {
+              "title": "E: lifting potential flow",
+              "id": 38
+            }
+          }
         }
+      },
+      "attr": {
+        "style": {},
+        "storyboard-scenes": [
+          {
+            "storyboards": {
+              "Storyboard 1": 3
+            },
+            "type": "with-children"
+          }
+        ]
       }
     },
     "21": {
@@ -65,11 +127,139 @@
       "id": 15,
       "ideas": {
         "1": {
-          "title": "Computationa Cost of E(u(Controls), State) = 0",
+          "title": "Computational Cost of E(u(c), s) = 0",
           "id": 16
+        },
+        "2": {
+          "title": "Efficient Geometrical Parametrizations",
+          "id": 17
         }
+      },
+      "attr": {
+        "style": {},
+        "storyboard-scenes": [
+          {
+            "storyboards": {
+              "Storyboard 1": 4
+            },
+            "type": "with-children"
+          }
+        ]
+      }
+    },
+    "31": {
+      "title": "Possible Answers",
+      "id": 20,
+      "ideas": {
+        "1": {
+          "title": "Reduced Order Models",
+          "id": 21,
+          "ideas": {
+            "1": {
+              "title": "RB Methods",
+              "id": 22,
+              "ideas": {}
+            },
+            "2": {
+              "title": "POD Methods",
+              "id": 23
+            }
+          },
+          "attr": {
+            "storyboard-scenes": [
+              {
+                "storyboards": {
+                  "Storyboard 1": 7
+                },
+                "type": "with-children"
+              }
+            ],
+            "style": {}
+          }
+        },
+        "2": {
+          "title": "Isogeometric Analysis",
+          "id": 24,
+          "ideas": {
+            "1": {
+              "title": "FE-IGA",
+              "id": 25
+            },
+            "2": {
+              "title": "IGA-BEM",
+              "id": 26
+            }
+          },
+          "attr": {
+            "storyboard-scenes": [
+              {
+                "storyboards": {
+                  "Storyboard 1": 8
+                },
+                "type": "with-children"
+              }
+            ],
+            "style": {}
+          }
+        }
+      },
+      "attr": {
+        "storyboard-scenes": [
+          {
+            "storyboards": {
+              "Storyboard 1": 6
+            },
+            "type": "with-children"
+          }
+        ],
+        "style": {}
+      }
+    },
+    "0.5": {
+      "title": "Abstract problem:\nParametric Optimization",
+      "id": 3,
+      "ideas": {
+        "1": {
+          "title": "Given: State parameters/scenario s",
+          "id": 4
+        },
+        "2": {
+          "title": "Find: Controls  c",
+          "id": 5
+        },
+        "3": {
+          "title": "Minimizing: J(u(c), s)",
+          "id": 7
+        },
+        "4": {
+          "title": "Subject to: E(u(c), s) = 0",
+          "id": 8,
+          "ideas": {}
+        }
+      },
+      "attr": {
+        "style": {},
+        "position": [
+          82.68464790296969,
+          -211.30397844708648,
+          1
+        ],
+        "storyboard-scenes": [
+          {
+            "storyboards": {
+              "Storyboard 1": 1.5
+            },
+            "type": "with-children"
+          }
+        ]
       }
     }
   },
-  "links": []
+  "links": [],
+  "attr": {
+    "storyboards": [
+      "Storyboard 1"
+    ],
+    "style": {}
+  }
 }
